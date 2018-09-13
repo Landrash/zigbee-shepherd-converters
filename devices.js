@@ -442,6 +442,14 @@ const devices = [
         fromZigbee: generic.light_onoff_brightness_colortemp().fromZigbee,
         toZigbee: generic.light_onoff_brightness_colortemp().toZigbee,
     },
+    {
+        zigbeeModel: ['TRADFRI control outlet'],
+        model: 'E1603',
+        vendor: 'IKEA',
+        description: 'TRADFRI control outlet',
+        fromZigbee: [fz.generic_state, fz.ignore_onoff_change],
+        toZigbee: [tz.onoff],    
+    },
 
     // Philips
     {
